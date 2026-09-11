@@ -1,0 +1,29 @@
+{
+  "name": "code-app-example-tta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo template for Web (Next.js) & Mobile (Expo/React Native Android) sharing common data contracts via npm workspaces",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:shared": "npm --workspace=@example/shared run build",
+    "dev:mobile": "npm --workspace=@example/mobile run dev",
+    "dev:android": "npm --workspace=@example/mobile run android",
+    "dev:web": "npm --workspace=@example/web run dev",
+    "typecheck": "npm run --workspaces typecheck"
+  },
+  "keywords": [
+    "monorepo",
+    "npm-workspaces",
+    "react-native",
+    "expo",
+    "android",
+    "nextjs",
+    "typescript",
+    "zod"
+  ],
+  "author": "Nguyen Phat",
+  "license": "MIT"
+}
